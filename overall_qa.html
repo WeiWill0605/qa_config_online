@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title></title>
 
 	<style type="text/css">
-		.db_fields{
+		.left_block{
 			float: left;
 			width: 20%;
 			height: 100%;
 			background-color: red;
 
 		}
-		.sql_config{
+		.dimension{
+			height: 20px;
+
+		}
+
+		.measure{
+
+		}
+
+		.group{
+
+		}
+
+
+		.middle_block{
 			float: left;
 			width: 30%;
 			height: 200px;
 			background-color: green;
 		}
-		.calc{
+		.right_block{
 			float: left;
 			width: 50%;		
 			height: 200px;
@@ -26,24 +41,28 @@
 	</style>
 </head>
 <body>
-<div class="db_fields">
-	<div>
+<div class="left_block">
+	<div class="dimension">
 		维度
 	</div>
-	<div>
-		度量
+	<div class="measure">
+		度量:
+		<div style="left: ">AVG</div>
+		<div>MIN</div>
+		<div>MAX</div>
 	</div>
 
-	<div>
+	<div class="group">
+
 		Group By
 	</div>
 </div>
 
-<div class="sql_config">
+<div class="middle_block">
 	area sql
 </div>
 
-<div class="calc">
+<div class="right_block">
 	area calc
 </div>
 
